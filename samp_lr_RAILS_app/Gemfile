@@ -9,6 +9,9 @@ gem 'pg'
 gem 'devise'
 gem 'pry-byebug'
 gem 'cancan'
+gem 'omniauth-facebook'
+gem 'carrierwave'
+
 
 
 group :development do
