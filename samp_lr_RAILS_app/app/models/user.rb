@@ -8,6 +8,8 @@ class User < ActiveRecord::Base
   attr_accessible :email, :password, :password_confirmation, :remember_me, :uid, :provider
   # attr_accessible :title, :body
 
+  has_many :songs
+
   def self.find_for_facebook_oauth(auth)
     if user = User.find_by_email(auth.info.email)
       user.provider = auth.provider
