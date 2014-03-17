@@ -11,3 +11,49 @@
  *= require_self
  *= require_tree .
  */
+
+ body {
+  background-color: #050506;
+  margin: 0px;
+  padding: 0px;
+  /* the follow is the code to have the image display as a full page */
+  background: url('akai2.jpg');
+  background-position: center;
+  background-attachment: fixed;
+  -webkit-background-size: cover;  /*the next 3 lines are "browser prefixes", they are necessary to include for CSS3 techniques */
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+/*  width: 1380px;
+  height: 792px;*/
+}
+
+#container {
+  /*background: url('akai2.jpg');*/
+  /*width: 1380px;
+  height: 792px;*/
+  margin: 0 auto;
+}
+
+#main {
+  width: 960px;
+  margin: 0 auto;
+}
+
+#nav {
+  background-color: white;
+  margin: 0px;
+  padding: 0px;
+}
+
+p {
+  width: 50px; height: 50px; background-color: #E4F6E5; border: 2px solid red;
+}
+
+div p {
+  display: inline-block; margin: 0; padding: 0;
+}
+
+ul {
+  margin: 0;
+}
