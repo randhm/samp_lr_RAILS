@@ -12,4 +12,45 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require soundmanager2
 //= require_tree .
+
+var myPlayer = myPlayer || {};
+myPlayer.play = function(id) {
+  var sound = myPlayer.getSound(id);
+  sound.play();
+};
+
+myPlayer.getSound = function(sound) {
+  var sound = soundManager.createSound({
+    id: sound,
+    url: '/sounds/' + sound + '.wav'
+  });
+  return sound;
+};
+
+$(document).keydown(function(ev) {
+  console.log(ev.which)
+  var $button = $("#button_" + ev.which)
+  var data = $button.data().sample;
+  console.log(data)
+  myPlayer.play(data);
+});
+
+
+myPlayer.setup = function() {
+  $('.playbutton').click(function(ev) {
+    console.log($(this).attr('data-sample'))
+    myPlayer.play($(this).attr('data-sample'));
+  });
+};
+
+$(document).ready(function() {
+  soundManager.setup({
+    url: '/swf/', preferFlash: true,
+    onready: myPlayer.setup
+  });
+});
+
+
+

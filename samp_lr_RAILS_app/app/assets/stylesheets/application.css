@@ -8,24 +8,33 @@
  * You're free to add application-wide styles to this file and they'll appear at the top of the
  * compiled file, but it's generally better to create a new file per style scope.
  *
+ *= require_normalize
  *= require_self
  *= require_tree .
  */
 
- body {
-  background-color: #050506;
-  margin: 0px;
-  padding: 0px;
-  /* the follow is the code to have the image display as a full page */
-  background: url('akai2.jpg');
-  background-position: center;
+ html {
+  background: url(akai2.jpg) no-repeat center center fixed;
   background-attachment: fixed;
-  -webkit-background-size: cover;  /*the next 3 lines are "browser prefixes", they are necessary to include for CSS3 techniques */
+  -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-/*  width: 1380px;
-  height: 792px;*/
+}
+
+ body {
+/*  background-color: #050506;*/
+  margin: 0px;
+  padding: 0px;
+  /* the follow is the code to have the image display as a full page */
+/*  background-image: url('akai3.jpg');
+  background-position: left;
+  background-attachment: fixed;
+  background-repeat: no-repeat;*/
+/*  -webkit-background-size: cover;  the next 3 lines are "browser prefixes", they are necessary to include for CSS3 techniques
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;*/
 }
 
 #container {
@@ -44,6 +53,7 @@
   background-color: white;
   margin: 0px;
   padding: 0px;
+  height: 40px;
 }
 
 p {
@@ -56,4 +66,20 @@ div p {
 
 ul {
   margin: 0;
+  float: right;
+}
+
+#right-triangle {
+   width: 0;
+   height: 0;
+   border-left: 100px solid red;
+   border-top: 50px solid transparent;
+   border-bottom: 50px solid transparent;
+}
+
+#sign-in {
+  width: 350px;
+  position: fixed;
+  bottom: 100px;
+  background-color: white;
 }
