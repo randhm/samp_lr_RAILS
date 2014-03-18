@@ -12,7 +12,7 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require soundmanager2
+//= require soundmanager
 //= require_tree .
 
 var myPlayer = myPlayer || {};

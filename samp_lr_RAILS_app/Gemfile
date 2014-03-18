@@ -11,6 +11,7 @@ gem 'pry-byebug'
 gem 'cancan'
 gem 'omniauth-facebook'
 gem 'carrierwave'
+gem 'soundmanager-rails'
 
 
 
