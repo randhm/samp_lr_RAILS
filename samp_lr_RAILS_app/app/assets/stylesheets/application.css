@@ -78,8 +78,14 @@ ul {
 }
 
 #sign-in {
-  width: 350px;
+  width: 300px;
   position: fixed;
-  bottom: 100px;
+  bottom: 30px;
+  margin-left: 15px;
+  padding: 15px;
   background-color: white;
+}
+
+.fb-button {
+
 }
