@@ -31,6 +31,7 @@ myPlayer.getSound = function(sound) {
 
 $(document).keydown(function(ev) {
   console.log(ev.which)
+  console.log(ev.timeStamp)
   var $button = $("#button_" + ev.which)
   var data = $button.data().sample;
   console.log(data)

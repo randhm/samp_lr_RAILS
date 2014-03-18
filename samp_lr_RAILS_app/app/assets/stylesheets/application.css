@@ -23,24 +23,11 @@
 }
 
  body {
-/*  background-color: #050506;*/
   margin: 0px;
   padding: 0px;
-  /* the follow is the code to have the image display as a full page */
-/*  background-image: url('akai3.jpg');
-  background-position: left;
-  background-attachment: fixed;
-  background-repeat: no-repeat;*/
-/*  -webkit-background-size: cover;  the next 3 lines are "browser prefixes", they are necessary to include for CSS3 techniques
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;*/
 }
 
 #container {
-  /*background: url('akai2.jpg');*/
-  /*width: 1380px;
-  height: 792px;*/
   margin: 0 auto;
 }
 
@@ -86,3 +73,16 @@ ul {
 /*.profile-img {
   border-radius: 100%;
 }*/
+
+p.kit-names {
+  color: white;
+}
+
+p.playbutton {
+  width: 50px; height: 50px; background-color: #E4F6E5; border: 2px solid red;
+}
+
+div p {
+  display: inline-block; margin: 0; padding: 0;
+}
+

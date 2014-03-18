@@ -1,0 +1,5 @@
+<div class="row">
+  <% @sample_pack.samples.each do |sample| %>
+    <p class="playbutton" id="button_<%= sample.key_mapped_to.upcase.ord %>" data-id="<%= sample.id %>" data-sample="<%= sample.name %>"><%= sample.key_mapped_to %></p>
+  <% end %>
+</div>

@@ -1,5 +1,10 @@
 SampLrRailsApp::Application.routes.draw do
 
+  resources :sample_packs, only: [] do
+    member do
+      get :play
+    end
+  end
 
   root :to => "home#index"
 

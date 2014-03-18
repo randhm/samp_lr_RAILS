@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20140318115122) do
+ActiveRecord::Schema.define(:version => 20140318153226) do
 
   create_table "sample_packs", :force => true do |t|
     t.string   "name"
@@ -23,20 +23,24 @@ ActiveRecord::Schema.define(:version => 20140318115122) do
     t.integer  "played_at_millisecond"
     t.datetime "created_at",            :null => false
     t.datetime "updated_at",            :null => false
+    t.integer  "song_id"
+    t.integer  "sample_id"
   end
 
   create_table "samples", :force => true do |t|
     t.string   "name"
     t.string   "key_mapped_to"
     t.string   "url"
-    t.datetime "created_at",    :null => false
-    t.datetime "updated_at",    :null => false
+    t.datetime "created_at",     :null => false
+    t.datetime "updated_at",     :null => false
+    t.integer  "sample_pack_id"
   end
 
   create_table "songs", :force => true do |t|
     t.string   "name"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
+    t.integer  "user_id"
   end
 
   create_table "users", :force => true do |t|
