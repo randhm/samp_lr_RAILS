@@ -47,7 +47,7 @@ myPlayer.setup = function() {
 
 $(document).ready(function() {
   soundManager.setup({
-    url: '/swf/', preferFlash: true,
+    url: window.soundManager.url, preferFlash: true,
     onready: myPlayer.setup
   });
 });
