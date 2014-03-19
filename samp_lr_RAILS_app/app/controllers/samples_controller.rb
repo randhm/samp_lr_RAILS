@@ -1,7 +1,6 @@
 class SamplesController < ApplicationController
 
   def index
-    @index = 27
     @song = Song.find(session[:song_id])
     @sample_plays = @song.sample_plays.all
 

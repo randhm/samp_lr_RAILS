@@ -52,7 +52,7 @@ myPlayer.playBack = function(sounds) {
   myPlayer.playFromArray(sounds);
 };
 
-$(document).keydown(function(ev) {
+myPlayer.newNotePressed = function(ev) {
   timeStamp = ev.timeStamp;
   var $button = $("#button_" + ev.which);
   if ($button.data() != undefined) {
@@ -63,14 +63,13 @@ $(document).keydown(function(ev) {
       $.post( "/sample_plays", { sample_play: { sample_id: sampleId, played_at_millisecond: timeStamp, song_id: songId } } );
     }
   }
-});
+}
+
+$(document).keydown(myPlayer.newNotePressed);
 
 
 myPlayer.setup = function() {
-  $('.playbutton').click(function(ev) {
-    console.log($(this).attr('data-sample'))
-    myPlayer.play($(this).attr('data-sample'));
-  });
+  $('.playbutton').click(myPlayer.newNotePressed);
 };
 
 $(document).ready(function() {
