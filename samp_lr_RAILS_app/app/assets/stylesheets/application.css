@@ -86,3 +86,8 @@ div p {
   display: inline-block; margin: 0; padding: 0;
 }
 
+#recording {
+  display: none;
+}
+
+

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20140318153226) do
+ActiveRecord::Schema.define(:version => 20140319160229) do
 
   create_table "sample_packs", :force => true do |t|
     t.string   "name"
@@ -20,11 +20,11 @@ ActiveRecord::Schema.define(:version => 20140318153226) do
   end
 
   create_table "sample_plays", :force => true do |t|
-    t.integer  "played_at_millisecond"
     t.datetime "created_at",            :null => false
     t.datetime "updated_at",            :null => false
     t.integer  "song_id"
     t.integer  "sample_id"
+    t.string   "played_at_millisecond"
   end
 
   create_table "samples", :force => true do |t|

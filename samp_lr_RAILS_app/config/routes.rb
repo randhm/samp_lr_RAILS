@@ -6,6 +6,9 @@ SampLrRailsApp::Application.routes.draw do
     end
   end
 
+  resources :sample_plays
+  resources :songs
+
   root :to => "home#index"
 
   devise_for :users, controllers: { omniauth_callbacks: 'omniauth_callbacks'}

@@ -16,6 +16,9 @@
 //= require_tree .
 
 var myPlayer = myPlayer || {};
+
+var currentlyRecording = false;
+
 myPlayer.play = function(id) {
   var sound = myPlayer.getSound(id);
   sound.play();
@@ -30,12 +33,16 @@ myPlayer.getSound = function(sound) {
 };
 
 $(document).keydown(function(ev) {
-  console.log(ev.which)
-  console.log(ev.timeStamp)
-  var $button = $("#button_" + ev.which)
-  var data = $button.data().sample;
-  console.log(data)
-  myPlayer.play(data);
+  timeStamp = ev.timeStamp;
+  var $button = $("#button_" + ev.which);
+  if ($button.data() != undefined) {
+    var sample = $button.data().sample;
+    var sampleId = $button.data().id;
+    myPlayer.play(sample);
+    if(currentlyRecording) {
+      $.post( "/sample_plays", { sample_play: { sample_id: sampleId, played_at_millisecond: timeStamp } } );
+    }
+  }
 });
 
 
@@ -51,6 +58,22 @@ $(document).ready(function() {
     url: window.soundManager.url, preferFlash: true,
     onready: myPlayer.setup
   });
+
+  $('#record_song').click(function() {
+    event.preventDefault();
+    $.post('/songs.json', function(data) {
+      currentlyRecording = true;
+      $('#record_song').hide();
+      $('#recording').show();
+    });
+  });
+
+  $('#recording').click(function() {
+    event.preventDefault();
+    $('#recording').hide();
+    $('#record_song').show();
+  })
+
 });
 
 

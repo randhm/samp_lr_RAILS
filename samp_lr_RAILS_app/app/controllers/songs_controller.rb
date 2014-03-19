@@ -2,11 +2,15 @@ class SongsController < ApplicationController
 
   def create
     @song = Song.new
-    if @song.save
-      session[:song_id] = @song.id
-    else
-      # let the user know there was a problem creating the song
-    end
+    @song.user = current_user
 
+    respond_to do |format|
+      if @song.save
+        session[:song_id] = @song.id
+        format.json { render json: @song, status: :created, location: @song }
+      else
+        format.json { render json: @song.errors, status: :unprocessable_entity }
+      end
+    end
   end
 end
