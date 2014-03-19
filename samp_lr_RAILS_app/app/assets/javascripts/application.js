@@ -31,6 +31,26 @@ myPlayer.getSound = function(sound) {
   });
   return sound;
 };
+myPlayer.findSoundName = function (keyID) {
+  var keyButton = $('*[data-id="' + keyID +'"]');
+  return keyButton.data('sample');
+};
+myPlayer.playFromArray = function (sounds) {
+  console.log(sounds);
+  if (sounds.length > 0) {
+    myPlayer.play(myPlayer.findSoundName(sounds[0].sample_id));
+    if (sounds.length > 1) {
+      var delay = sounds[1].played_at_millisecond - sounds[0].played_at_millisecond;
+      sounds.splice(0,1);
+      setTimeout( function () { myPlayer.playFromArray(sounds)}, delay);
+    }
+  }
+}
+
+myPlayer.playBack = function(sounds) {
+  var x = 0;
+  myPlayer.playFromArray(sounds);
+};
 
 $(document).keydown(function(ev) {
   timeStamp = ev.timeStamp;
@@ -40,7 +60,7 @@ $(document).keydown(function(ev) {
     var sampleId = $button.data().id;
     myPlayer.play(sample);
     if(currentlyRecording) {
-      $.post( "/sample_plays", { sample_play: { sample_id: sampleId, played_at_millisecond: timeStamp } } );
+      $.post( "/sample_plays", { sample_play: { sample_id: sampleId, played_at_millisecond: timeStamp, song_id: songId } } );
     }
   }
 });
@@ -79,7 +99,10 @@ $(document).ready(function() {
 
   $("#playback-button").click(function(ev) {
     ev.preventDefault();
-
+      $.get('/samples.json', function(data) {
+          console.log(data);
+          myPlayer.playBack(data);
+      });
     return false;
   });
 

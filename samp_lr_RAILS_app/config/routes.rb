@@ -8,6 +8,7 @@ SampLrRailsApp::Application.routes.draw do
 
   resources :sample_plays
   resources :songs
+  resources :samples
 
   root :to => "home#index"
 
