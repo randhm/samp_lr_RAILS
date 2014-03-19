@@ -15,9 +15,9 @@
 //= require soundmanager
 //= require_tree .
 
-var myPlayer = myPlayer || {};
-
-var currentlyRecording = false;
+var myPlayer = myPlayer || {},
+  currentlyRecording = false,
+  songId;
 
 myPlayer.play = function(id) {
   var sound = myPlayer.getSound(id);
@@ -59,20 +59,29 @@ $(document).ready(function() {
     onready: myPlayer.setup
   });
 
-  $('#record_song').click(function() {
-    event.preventDefault();
+  $('#record_song').click(function(ev) {
+    ev.preventDefault();
     $.post('/songs.json', function(data) {
+      songId = data.id;
       currentlyRecording = true;
       $('#record_song').hide();
       $('#recording').show();
     });
+    return false; // does the same as prevent default
   });
 
-  $('#recording').click(function() {
-    event.preventDefault();
+  $('#recording').click(function(ev) {
+    ev.preventDefault();
     $('#recording').hide();
     $('#record_song').show();
-  })
+    return false;
+  });
+
+  $("#playback-button").click(function(ev) {
+    ev.preventDefault();
+
+    return false;
+  });
 
 });
 
