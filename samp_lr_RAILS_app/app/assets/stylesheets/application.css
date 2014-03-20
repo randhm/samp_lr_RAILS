@@ -37,7 +37,7 @@ body {
 }
 
 #nav {
-  background-color: #F9EFEC;
+  background-color:rgba(255,0,0,0.2);
   margin: 0px;
   padding: 0px;
   height: 50px;
@@ -47,6 +47,10 @@ ul {
   margin: 0;
   float: right;
   margin-right: 5px;
+}
+
+#logo {
+  float: left;
 }
 
 #right-triangle {
@@ -157,6 +161,7 @@ div p {
   border-color: hsla(360, 80%, 50%, 0.8) white;
 
 }
+
 
 
 
