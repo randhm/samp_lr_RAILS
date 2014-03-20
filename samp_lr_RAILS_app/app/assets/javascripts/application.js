@@ -69,7 +69,7 @@ $(document).keydown(myPlayer.newNotePressed);
 
 
 myPlayer.setup = function() {
-  $('.playbutton').click(myPlayer.newNotePressed);
+  // $('.playbutton').click(myPlayer.newNotePressed);
 };
 
 $(document).ready(function() {
