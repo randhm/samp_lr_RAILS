@@ -1,7 +1,7 @@
 class SamplesController < ApplicationController
 
   def index
-    @song = Song.find(session[:song_id])
+    @song = Song.find(params[:song_id])
     @sample_plays = @song.sample_plays.all
 
     respond_to do |format|

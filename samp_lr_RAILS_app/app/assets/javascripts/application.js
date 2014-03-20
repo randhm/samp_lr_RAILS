@@ -86,23 +86,21 @@ $(document).ready(function() {
       $('#record_song').hide();
       $('#recording').show();
     });
-    return false; // does the same as prevent default
   });
 
   $('#recording').click(function(ev) {
     ev.preventDefault();
     $('#recording').hide();
     $('#record_song').show();
-    return false;
   });
 
-  $("#playback-button").click(function(ev) {
+  $(".playback-button").click(function(ev) {
     ev.preventDefault();
-      $.get('/samples.json', function(data) {
-          console.log(data);
-          myPlayer.playBack(data);
-      });
-    return false;
+    var songId = $(ev.currentTarget).data('song_id');
+    $.get('/samples.json?song_id='+songId, function(data) {
+        console.log(data);
+        myPlayer.playBack(data);
+    });
   });
 
 });

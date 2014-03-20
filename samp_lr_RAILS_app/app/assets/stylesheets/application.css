@@ -22,7 +22,7 @@
   background-size: cover;
 }
 
- body {
+body {
   margin: 0px;
   padding: 0px;
 }
@@ -50,11 +50,11 @@ ul {
 }
 
 #right-triangle {
-   width: 0;
-   height: 0;
-   border-left: 100px solid red;
-   border-top: 50px solid transparent;
-   border-bottom: 50px solid transparent;
+  width: 0;
+  height: 0;
+  border-left: 100px solid red;
+  border-top: 50px solid transparent;
+  border-bottom: 50px solid transparent;
 }
 
 #sign-in {
@@ -94,56 +94,72 @@ div p {
   color: white;
 }
 
-
-
-
-#button-container{
-    width:20%;
-    margin:1em 0;
-    padding:1em;
-    background-color:hsla(360, 50%, 0%, 0.8);
-    border:1px #000 solid;
+#button-container {
+  width:50%;
+  margin:1em 0;
+  padding:1em;
+  background-color:hsla(360, 50%, 0%, 0.8);
+  border:1px #000 solid;
 }
 
 
-.button{
-    position:relative;
-    border-radius:50%;
-    width:5em;
-    height:5em;
-    border:0.2em hsla(360, 80%, 50%, 0.8) solid;
-    margin:0.5em;
-    display:inline-block;
+.button {
+  position:relative;
+  border-radius:50%;
+  width:5em;
+  height:5em;
+  border:0.2em hsla(360, 80%, 50%, 0.8) solid;
+  margin:0.5em;
+  display:inline-block;
 }
 
-.circle{
-    position:absolute;
-    top:5%;
-    left:5%;
-    border-radius:50%;
-    width:90%;
-    height:90%;
-    display:block;
-    background-color:hsla(360, 80%, 50%, 0.8);
-    border:0;
+.circle {
+  position:absolute;
+  top:5%;
+  left:5%;
+  border-radius:50%;
+  width:90%;
+  height:90%;
+  display:block;
+  background-color:hsla(360, 80%, 50%, 0.8);
+  border:0;
 }
 
 
-.control{
-    position:absolute;
-    top:42.5%;
-    left:42.5%;
-    width:15%;
-    height:15%;
-    display:block;
-    background-color:white;
-    box-shadow: inset 0px 1px 3px 0px black;
+.control {
+  position:absolute;
+  top:42.5%;
+  left:42.5%;
+  width:15%;
+  height:15%;
+  display:block;
+  background-color:white;
+  box-shadow: inset 0px 1px 3px 0px black;
 }
 
-.stop{
-    border-radius:0%;
+.stop {
+  border-radius:0%;
 }
-.record{
-    border-radius:50%;
+.record {
+  border-radius:50%;
 }
+.play {
+  position:absolute;
+  top:42.5%;
+  left:42.5%;
+  width:15%;
+  height:15%;
+  display:block;
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 7.5px 0 7.5px 13.0px;
+  border-color: hsla(360, 80%, 50%, 0.8) white;
+
+}
+
+
+
+
+
 
