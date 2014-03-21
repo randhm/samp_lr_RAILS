@@ -31,14 +31,15 @@ myPlayer.getSound = function(sound) {
   });
   return sound;
 };
-myPlayer.findSoundName = function (keyID) {
-  var keyButton = $('*[data-id="' + keyID +'"]');
-  return keyButton.data('sample');
-};
+// myPlayer.findSoundName = function (keyID) {
+//   var keyButton = $('*[data-id="' + keyID +'"]');
+//   return keyButton.data('sample');
+// };
 myPlayer.playFromArray = function (sounds) {
   console.log(sounds);
   if (sounds.length > 0) {
-    myPlayer.play(myPlayer.findSoundName(sounds[0].sample_id));
+    // myPlayer.play(myPlayer.findSoundName(sounds[0].sample_id));
+    myPlayer.play(sounds[0]['sample']['name']);
     if (sounds.length > 1) {
       var delay = sounds[1].played_at_millisecond - sounds[0].played_at_millisecond;
       sounds.splice(0,1);
