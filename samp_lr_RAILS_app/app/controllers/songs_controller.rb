@@ -1,5 +1,9 @@
 class SongsController < ApplicationController
 
+  def index
+    @songs = Song.all
+  end
+
   def create
     @song = Song.new
     @song.user = current_user
@@ -13,4 +17,12 @@ class SongsController < ApplicationController
       end
     end
   end
+
+  def destroy
+    @song = Song.find(params[:id])
+    @song.destroy
+  end
+
+
+
 end

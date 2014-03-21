@@ -1,0 +1,13 @@
+<% @songs.each do |song| %>
+
+  <p>
+    <a href="#" class="playback-button" data-song_id="<%=song.id%>">
+      <div class="button">
+        <div class="circle"></div>
+        <div class="play"></div>
+      </div>
+    </a>
+    <%= link_to 'Destroy song', song, method: :delete, data: { confirm: 'Are you sure?' } %>
+  </p>
+
+<% end %>

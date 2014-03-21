@@ -5,7 +5,7 @@ class SamplesController < ApplicationController
     @sample_plays = @song.sample_plays.all
 
     respond_to do |format|
-        format.json { render json: @sample_plays}
+        format.json {render json: @sample_plays.to_json(include: :sample)}
     end
   end
 
