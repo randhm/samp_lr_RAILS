@@ -79,6 +79,17 @@ $(document).ready(function() {
     onready: myPlayer.setup
   });
 
+
+// function showRecordButton() {
+//   $name = $('#song_name');
+//   $name.val() == "" {
+//       alert("Please enter a song name")
+//     };
+//     else
+// }
+
+
+
   $('#record_song').click(function(ev) {
     ev.preventDefault();
     $.post('/songs.json', function(data) {
@@ -105,6 +116,8 @@ $(document).ready(function() {
   });
 
 });
+
+
 
 
 

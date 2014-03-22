@@ -111,6 +111,8 @@ div p {
   display: none;
 }
 
+
+
 #playback-button {
   color: white;
 }
@@ -124,6 +126,8 @@ div p {
 }
 
 
+
+
 .button {
   position:relative;
   border-radius:50%;
@@ -132,6 +136,10 @@ div p {
   border:0.2em hsla(360, 80%, 50%, 0.8) solid;
   margin:0.5em;
   display:inline-block;
+}
+
+.hidden {
+  display: none;
 }
 
 .circle {
