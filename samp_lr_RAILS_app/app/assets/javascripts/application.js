@@ -89,6 +89,15 @@ $(document).ready(function() {
 // }
 
 
+$("#song_name").keyup(function(ev) {
+  $songName = $(ev.currentTarget);
+  if ($songName.val() > "") {
+    $('#record_song').show();
+  } else {
+    $('#record_song').hide();
+  }
+});
+
 
   $('#record_song').click(function(ev) {
     ev.preventDefault();
