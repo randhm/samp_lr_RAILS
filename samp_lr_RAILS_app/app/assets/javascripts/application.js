@@ -101,7 +101,7 @@ $("#song_name").keyup(function(ev) {
 
   $('#record_song').click(function(ev) {
     ev.preventDefault();
-    $.post('/songs.json', function(data) {
+    $.post('/songs.json', {song: {name: $('#song_name').val()}}, function(data) {
       songId = data.id;
       currentlyRecording = true;
       $('#record_song').hide();

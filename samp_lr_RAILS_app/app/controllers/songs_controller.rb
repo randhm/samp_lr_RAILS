@@ -5,7 +5,7 @@ class SongsController < ApplicationController
   end
 
   def create
-    @song = Song.new
+    @song = Song.new(params[:song])
     @song.user = current_user
 
     respond_to do |format|
