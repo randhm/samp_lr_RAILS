@@ -81,11 +81,33 @@ ul {
 #sign-in {
   width: 700px;
   height: 437px;
-  position: fixed;
+  position: relative;
+  margin-top: 120px;
   /*bottom: 30px;
   margin-left: 15px;
   padding: 15px;*/
   background: url(opacity_arrow2.png);
+}
+
+#sign-in-content {
+  position: absolute;
+  margin-top: -50px;
+  margin-left: 40px;
+/*  margin-bottom: -30px;
+*/}
+
+#floating-box-logo {
+  margin-left: 40px;
+  margin-top: -40px;
+}
+
+#strapline {
+  margin-bottom: 100px;
+  margin-top: -100px;
+  margin-left: 63px;
+  font-size: 23px;
+  font-family: helvetica;
+  color: white;
 }
 
 .fb-button {
