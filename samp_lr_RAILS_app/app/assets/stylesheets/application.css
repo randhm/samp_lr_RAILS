@@ -92,13 +92,13 @@ ul {
 #sign-in-content {
   position: absolute;
   margin-top: -50px;
-  margin-left: 40px;
+  margin-left: 62px;
 /*  margin-bottom: -30px;
 */}
 
 #floating-box-logo {
   margin-left: 40px;
-  margin-top: -40px;
+  margin-top: -70px;
 }
 
 #strapline {
@@ -110,8 +110,37 @@ ul {
   color: white;
 }
 
-.fb-button {
+.text-box {
+  margin-bottom: 15px;
+  color: #999;
+  font-weight: bold;
+   /* font-size: 24px;
+    padding: 10px;
+    border: 2px solid #999;
+    border-radius:2px;*/
+/*  background-color: yellow;
+*/}
 
+.label {
+  color: white;
+}
+
+#sign-in-button {
+
+}
+
+#or {
+  position: absolute;
+  margin-left: 71px;
+  margin-top: -19px;
+  color: white;
+}
+
+
+.fb-button {
+  position: absolute;
+  margin-left: 105px;
+  margin-top: -89px;
 }
 
 /*.profile-img {
