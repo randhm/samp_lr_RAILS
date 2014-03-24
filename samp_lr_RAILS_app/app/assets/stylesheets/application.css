@@ -154,11 +154,23 @@ p.kit-names {
 }
 
 p.playbutton {
-  width: 70px; height: 70px; background-color: #E4F6E5; border: 2px solid red;
+  width: 70px;
+  height: 70px;
+  background-color: #F7F0E8;
+  border: 2px solid red;
+  border-radius: 15px;
+}
+
+p {
+  color: black;
+  font-size: 40px;
+  font-family: helvetica;
 }
 
 div p {
-  display: inline-block; margin: 0; padding: 0;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
 }
 
 #recording {
@@ -245,8 +257,22 @@ div p {
 /*------------------ KEYBOARD STYLE ----------------*/
 
 .keyboard_container{
-  max-width: 770px;
+  position: absolute;
+  max-width: 842px;
+  margin-left: 320px;
+  margin-top: 100px;
 /*  margin: 0 auto;*/
+}
+
+.keyboard_container p {
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+
+
+p {
+  line-height: 70px;
+  text-align: center;
 }
 
 .keyboard_container p:nth-child(11) {
@@ -255,7 +281,7 @@ div p {
 }
 
 .keyboard_container p:nth-child(20) {
-  margin-left: 35px;
+  margin-left: 60px;
   margin-top: 5px;
 }
 
