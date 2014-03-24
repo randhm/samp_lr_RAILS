@@ -154,8 +154,8 @@ p.kit-names {
 }
 
 p.playbutton {
-  width: 70px;
-  height: 70px;
+  width: 80px;
+  height: 80px;
   background-color: #F7F0E8;
   border: 2px solid red;
   border-radius: 15px;
@@ -177,7 +177,11 @@ div p {
   display: none;
 }
 
-
+#record_song, #recording {
+  position: absolute;
+  margin-top: 406px;
+  margin-left: 900px;
+}
 
 #playback-button {
   color: white;
@@ -252,14 +256,19 @@ div p {
   border-color: hsla(360, 80%, 50%, 0.8) white;
 }
 
+#song_name {
+  position: absolute;
+  margin-top: 450px;
+  margin-left: 600px;
+}
 
 
 /*------------------ KEYBOARD STYLE ----------------*/
 
 .keyboard_container{
   position: absolute;
-  max-width: 842px;
-  margin-left: 320px;
+  max-width: 913px;
+  margin-left: 280px;
   margin-top: 100px;
 /*  margin: 0 auto;*/
 }
@@ -269,9 +278,8 @@ div p {
   margin-bottom: 5px;
 }
 
-
 p {
-  line-height: 70px;
+  line-height: 80px;
   text-align: center;
 }
 
@@ -284,5 +292,6 @@ p {
   margin-left: 60px;
   margin-top: 5px;
 }
+
 
 
