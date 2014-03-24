@@ -46,6 +46,8 @@ body {
 ul {
   margin: 0 5px 0 0;
   float: right;
+  color: white;
+  font-family: helvetica;
 }
 
 #logo {
@@ -143,9 +145,9 @@ ul {
   margin-top: -89px;
 }
 
-/*.profile-img {
-  border-radius: 100%;
-}*/
+.profile-img {
+  margin-bottom: 5px
+}
 
 p.kit-names {
   color: white;
