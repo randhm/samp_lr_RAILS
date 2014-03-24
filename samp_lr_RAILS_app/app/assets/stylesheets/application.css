@@ -154,7 +154,7 @@ p.kit-names {
 }
 
 p.playbutton {
-  width: 50px; height: 50px; background-color: #E4F6E5; border: 2px solid red;
+  width: 70px; height: 70px; background-color: #E4F6E5; border: 2px solid red;
 }
 
 div p {
@@ -238,12 +238,25 @@ div p {
   border-style: solid;
   border-width: 7.5px 0 7.5px 13.0px;
   border-color: hsla(360, 80%, 50%, 0.8) white;
-
 }
 
 
 
+/*------------------ KEYBOARD STYLE ----------------*/
 
+.keyboard_container{
+  max-width: 770px;
+/*  margin: 0 auto;*/
+}
 
+.keyboard_container p:nth-child(11) {
+  margin-left: 20px;
+  margin-top: 5px;
+}
+
+.keyboard_container p:nth-child(20) {
+  margin-left: 35px;
+  margin-top: 5px;
+}
 
 
