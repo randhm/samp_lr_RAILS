@@ -1,5 +1,5 @@
 class Sample < ActiveRecord::Base
-  attr_accessible :key_mapped_to, :name
+  attr_accessible :key_mapped_to, :name, :sample_pack
   belongs_to :sample_pack
   has_many :sample_plays
 
