@@ -149,16 +149,14 @@ ul {
   margin-bottom: 5px
 }
 
-p.kit-names {
-  color: white;
-}
+
 
 p.playbutton {
   width: 80px;
   height: 80px;
-  background-color: #F7F0E8;
-  border: 2px solid red;
-  border-radius: 15px;
+  background-color: #8B959E;
+/*  border: 2px solid red;
+*/  border-radius: 15px;
 }
 
 p {
@@ -179,8 +177,8 @@ div p {
 
 #record_song, #recording {
   position: absolute;
-  margin-top: 406px;
-  margin-left: 900px;
+  margin-top: 376px;
+  margin-left: 850px;
 }
 
 #playback-button {
@@ -258,10 +256,22 @@ div p {
 
 #song_name {
   position: absolute;
-  margin-top: 450px;
-  margin-left: 600px;
+  margin-top: 400px;
+  margin-left: 500px;
+  height: 50px;
+  width: 300px;
+  font-size: 30px;
+  font-family: helvetica;
+  text-align: center;
+  border-radius: 15px;
 }
 
+
+
+/**::-webkit-input-placeholder {
+  color: #8B959E;
+  text-align: center;
+}*/
 
 /*------------------ KEYBOARD STYLE ----------------*/
 
@@ -292,6 +302,41 @@ p {
   margin-left: 60px;
   margin-top: 5px;
 }
+
+/*---------------KIT SELECTOR------------------*/
+
+#sample-pack-container {
+  max-width: 913px;
+  margin-top: 70px;
+  margin-left: 300px;
+}
+
+#sample-pack-background {
+  position: relative;
+}
+
+.sample-pack-button {
+  position: relative;
+  display: inline-block;
+  width: 140px;
+  height: 140px;
+  background-color: #8B959E;
+  margin: 10px;
+  border:1px white solid;
+}
+
+.sample-pack-button a {
+  width: 140px;
+  height: 140px;
+  position: absolute;
+  color: white;
+  text-decoration: none;
+  padding-left: 5px;
+  padding-top: 5px;
+}
+
+
+
 
 
 

@@ -1,7 +1,13 @@
-<% @sample_packs.each do |sample_pack| %>
+<div id="sample-pack-container">
+  <div id="sample-pack-background">
+    <% @sample_packs.each do |sample_pack| %>
+      <div class="sample-pack-button" id="sample-pack-<%= sample_pack.name %>">
+      <%= link_to (sample_pack.name), play_sample_pack_path(sample_pack) %>
+        <%#= link_to 'play', play_sample_pack_path(sample_pack) %>
+      </div>
+    <% end %>
+  </div>
+</div>
 
-  <p class="kit-names"><%= sample_pack.name %></p>
-  <%= link_to 'play', play_sample_pack_path(sample_pack) %>
-  <br/>
 
-<% end %>
+
