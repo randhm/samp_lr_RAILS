@@ -63,20 +63,10 @@ myPlayer.newNotePressed = function(ev) {
     if(currentlyRecording) {
       $.post( "/sample_plays", { sample_play: { sample_id: sampleId, played_at_millisecond: timeStamp, song_id: songId } } );
     }
-    $button.effect('highlight', {color:"yellow"}, 300 );
+    $button.effect('highlight', {color:"white"}, 100 );
 
   }
 }
-
-// $(document).ready(function() {
-//     function changeKeyColour(ev) {
-//         $(".playbutton" + ev.which).css('background-color', '#fff').find($("#button_" + ev.which)).css('color','red');
-//         setTimeout(function() {
-//             $('.playbutton' + ev.which).css('background-color', '#8B959E').find($("#button_" + ev.which)).css('color','#fff');
-//         }, 100);
-
-
-
 
 
 $(document).keydown(myPlayer.newNotePressed);
@@ -91,15 +81,6 @@ $(document).ready(function() {
     url: window.soundManager.url, preferFlash: true,
     onready: myPlayer.setup
   });
-
-
-// function showRecordButton() {
-//   $name = $('#song_name');
-//   $name.val() == "" {
-//       alert("Please enter a song name")
-//     };
-//     else
-// }
 
 
 $("#song_name").keyup(function(ev) {

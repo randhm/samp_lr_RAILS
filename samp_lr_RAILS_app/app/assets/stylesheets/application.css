@@ -113,28 +113,45 @@ ul {
   color: white;
 }
 
+
+
 .text-box {
   margin-bottom: 15px;
-  color: #999;
-  font-weight: bold;
-   /* font-size: 24px;
+  color: #8B959E;
+/*  font-weight: bold;
+*/  background-color: white;
+ /* font-size: 24px;
     padding: 10px;
     border: 2px solid #999;
     border-radius:2px;*/
 /*  background-color: yellow;
 */}
 
+/**:focus {
+    outline: 0;
+}*/
+
 .label {
   color: white;
 }
 
 #sign-in-button {
+  background-color: #8B959E;
+  width: 66px;
+  height: 27px;
+}
 
+#sign-up {
+  background-color: #8B959E;
+  width: 146px;
+  height: 27px;
+  position: absolute;
+  margin-top: 15px;
 }
 
 #or {
   position: absolute;
-  margin-left: 71px;
+  margin-left: 74px;
   margin-top: -19px;
   color: white;
 }
@@ -143,7 +160,7 @@ ul {
 .fb-button {
   position: absolute;
   margin-left: 105px;
-  margin-top: -89px;
+  margin-top: -72px;
 }
 
 .profile-img {
@@ -178,8 +195,8 @@ div p {
 
 #record_song, #recording {
   position: absolute;
-  margin-top: 376px;
-  margin-left: 850px;
+  margin-top: 380px;
+  margin-left: 770px;
 }
 
 #playback-button {
@@ -257,17 +274,20 @@ div p {
 
 #song_name {
   position: absolute;
-  margin-top: 400px;
-  margin-left: 500px;
+  margin-top: 405px;
+  margin-left: 400px;
   height: 50px;
   width: 300px;
   font-size: 30px;
   font-family: helvetica;
   text-align: center;
   border-radius: 15px;
+  background-color: white;
 }
 
-
+input {
+  background-color: transparent;
+}
 
 /**::-webkit-input-placeholder {
   color: #8B959E;
@@ -279,7 +299,7 @@ div p {
 .keyboard_container{
   position: absolute;
   max-width: 913px;
-  margin-left: 280px;
+  margin-left: 200px;
   margin-top: 100px;
 /*  margin: 0 auto;*/
 }
