@@ -336,7 +336,28 @@ p {
 }
 
 
+/*--------------USER SONG PAGE--------------*/
 
+#songs-container {
+  max-width: 500px;
+  margin-top: 50px;
+  margin-left: 500px;
+}
 
+#songs-background {
+  position: relative;
+}
+
+#name {
+  position: absolute;
+  color: white;
+  margin-left: 137px;
+  margin-top: -88px;
+  font-size: 25px;
+}
+
+#delete {
+  color: red;
+}
 
 

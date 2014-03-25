@@ -1,7 +1,7 @@
 class SongsController < ApplicationController
 
   def index
-    @songs = Song.all
+    @songs = Song.page(params[:page]).per(5)
   end
 
   def create
