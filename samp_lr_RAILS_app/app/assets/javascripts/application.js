@@ -63,8 +63,21 @@ myPlayer.newNotePressed = function(ev) {
     if(currentlyRecording) {
       $.post( "/sample_plays", { sample_play: { sample_id: sampleId, played_at_millisecond: timeStamp, song_id: songId } } );
     }
+    $button.effect('highlight', {color:"yellow"}, 300 );
+
   }
 }
+
+// $(document).ready(function() {
+//     function changeKeyColour(ev) {
+//         $(".playbutton" + ev.which).css('background-color', '#fff').find($("#button_" + ev.which)).css('color','red');
+//         setTimeout(function() {
+//             $('.playbutton' + ev.which).css('background-color', '#8B959E').find($("#button_" + ev.which)).css('color','#fff');
+//         }, 100);
+
+
+
+
 
 $(document).keydown(myPlayer.newNotePressed);
 

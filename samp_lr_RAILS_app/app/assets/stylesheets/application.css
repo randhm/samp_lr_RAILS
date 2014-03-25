@@ -44,6 +44,7 @@ body {
 }
 
 ul {
+  /*position: relative;*/
   margin: 0 5px 0 0;
   float: right;
   color: white;
@@ -351,13 +352,18 @@ p {
 #name {
   position: absolute;
   color: white;
-  margin-left: 137px;
+  margin-left: 114px;
   margin-top: -88px;
   font-size: 25px;
 }
 
 #delete {
-  color: red;
+  position: absolute;
+  color: white;
+  text-decoration: none;
+  font-size: 25px;
+  margin-left: 15px;
+  margin-top: 58px;
 }
 
 
