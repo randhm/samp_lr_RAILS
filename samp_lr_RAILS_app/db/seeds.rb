@@ -31,7 +31,7 @@ end
 
 
 kit = SamplePack.create!(name: 'Hip Hop Heavy')
-samples = [''DAT-HipHop Kit4-Clap', ''DAT-HipHop Kit4-ClosedHH2', 'DAT-HipHop Kit4-CongaHit', 'DAT-HipHop Kit4-CongaSlap', 'DAT-HipHop Kit4-Crash', 'DAT-HipHop Kit4-CrunkSlam', 'DAT-HipHop Kit4-Fill1', 'DAT-HipHop Kit4-Fill2', 'DAT-HipHop Kit4-Hat1', 'DAT-HipHop Kit4-HornGrowl', 'DAT-HipHop Kit4-Jilted', 'DAT-HipHop Kit4-Kick1', 'DAT-HipHop Kit4-Kick2', 'DAT-HipHop Kit4-MidTom', 'DAT-HipHop Kit4-OpenHH', 'DAT-HipHop Kit4-OpenHH2', 'DAT-HipHop Kit4-PedalHH', 'DAT-HipHop Kit4-PedalHH2', 'DAT-HipHop Kit4-Rim1', 'DAT-HipHop Kit4-Snr1', 'DAT-HipHop Kit4-Snr2', 'DAT-HipHop Kit4-WoodSnare']
+samples = ['DAT-HipHop Kit4-Clap', 'DAT-HipHop-Kit4-ClosedHH2', 'DAT-HipHop Kit4-CongaHit', 'DAT-HipHop-Kit4-CongaSlap', 'DAT-HipHop-Kit4-Crash', 'DAT-HipHop-Kit4-CrunkSlam', 'DAT-HipHop-Kit4-Fill1', 'DAT-HipHop-Kit4-Fill2', 'DAT-HipHop Kit4-Hat1', 'DAT-HipHop Kit4-HornGrowl', 'DAT-HipHop Kit4-Jilted', 'DAT-HipHop Kit4-Kick1', 'DAT-HipHop Kit4-Kick2', 'DAT-HipHop Kit4-MidTom', 'DAT-HipHop Kit4-OpenHH', 'DAT-HipHop Kit4-OpenHH2', 'DAT-HipHop Kit4-PedalHH', 'DAT-HipHop Kit4-PedalHH2', 'DAT-HipHop Kit4-Rim1', 'DAT-HipHop Kit4-Snr1', 'DAT-HipHop Kit4-Snr2', 'DAT-HipHop Kit4-WoodSnare']
 letters = ['Q', 'W', 'E', 'R', 'T', 'Y', 'U', 'I', 'O', 'P', 'A', 'S', 'D', 'F', 'G', 'H', 'J', 'K', 'L', 'Z', 'X', 'C', 'V', 'B', 'N', 'M']
 samples.each_with_index do |item, index|
   Sample.create! name: item, key_mapped_to: letters[index], sample_pack: kit
