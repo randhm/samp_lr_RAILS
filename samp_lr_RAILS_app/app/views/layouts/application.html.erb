@@ -12,8 +12,9 @@
     <div id="nav">
       <%= link_to(image_tag("samplr_logo.png", size: "201x115", :id => "logo"), root_path) %>
         <ul>
-          <%# if current_user %>
-            <%= image_tag current_user.image + '?type=small', {:class => 'profile-img'} if current_user.image %>
+          <% if current_user && current_user.image %>
+            <%= link_to(image_tag(current_user.image + '?type=small', :class => 'profile-img'), songs_path) %>
+            <% end %>
             <%#= current_user.name if current_user.name %>
             <%= current_user.email %>
             <%= link_to(image_tag("samplr_standby.png", size: "50x50"), destroy_user_session_path, method: :delete) %>
