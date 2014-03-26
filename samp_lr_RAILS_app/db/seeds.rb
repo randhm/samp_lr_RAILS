@@ -84,3 +84,19 @@ letters = ['Q', 'W', 'E', 'R', 'T', 'Y', 'U', 'I', 'O', 'P', 'A', 'S', 'D', 'F',
 samples.each_with_index do |item, index|
   Sample.create! name: item, key_mapped_to: letters[index], sample_pack: kit
 end
+
+
+kit = SamplePack.create!(name: 'Skrillex')
+samples = ['sk-bass-1', 'sk-bass-2', 'sk-bass-3', 'sk-bass-5', 'sk-bass-solo', 'sk-intro-loop', 'sk-noise-fx', 'sk-weekend-transpose', 'sk-weekends-clap-break', 'sk-weekends']
+letters = ['Q', 'W', 'E', 'R', 'T', 'Y', 'U', 'I', 'O', 'P', 'A', 'S', 'D', 'F', 'G', 'H', 'J', 'K', 'L', 'Z', 'X', 'C', 'V', 'B', 'N', 'M']
+samples.each_with_index do |item, index|
+  Sample.create! name: item, key_mapped_to: letters[index], sample_pack: kit
+end
+
+
+kit = SamplePack.create!(name: 'Benny Bennassi')
+samples = ['benny-m-pushme', 'benny-m-and-then', 'benny-m-till-i', 'benny-m-satisfaction', 'benny-f-pushme', 'benny-f-and-then', 'benny-f-till-i', 'benny-f-satisfaction', 'benny-m-push', 'benny-f-push', 'benny-Satisfaction1a', 'benny-Satisfaction2']
+letters = ['Q', 'W', 'E', 'R', 'T', 'Y', 'U', 'I', 'O', 'P', 'A', 'S', 'D', 'F', 'G', 'H', 'J', 'K', 'L', 'Z', 'X', 'C', 'V', 'B', 'N', 'M']
+samples.each_with_index do |item, index|
+  Sample.create! name: item, key_mapped_to: letters[index], sample_pack: kit
+end
