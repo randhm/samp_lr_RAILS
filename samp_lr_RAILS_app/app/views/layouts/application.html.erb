@@ -13,16 +13,16 @@
     <% if current_user %>
     <div id="nav">
       <%= link_to(image_tag("samplr_logo.png", size: "201x115", :id => "logo"), root_path) %>
-        <ul>
+        <div id="nav-items">
           <% if current_user && current_user.image %>
-            <%= link_to(image_tag(current_user.image + '?type=small', :class => 'profile-img'), songs_path) %>
+            <div id="photo"><%= link_to(image_tag(current_user.image + '?type=small', :class => 'profile-img'), songs_path) %></div>
             <% end %>
             <%#= current_user.name if current_user.name %>
-            <%= current_user.email %>
-            <%= link_to(image_tag("samplr_standby.png", size: "50x50"), destroy_user_session_path, method: :delete) %>
+            <div id="email"><%= current_user.email %></div>
+            <div id="standby"><%= link_to(image_tag("samplr_standby.png", size: "40x40"), destroy_user_session_path, method: :delete) %></div>
 
           <% end %>
-        </ul>
+        </div>
     </div>
       <div id="main">
 
