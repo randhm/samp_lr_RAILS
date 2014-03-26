@@ -55,7 +55,31 @@ end
 
 
 kit = SamplePack.create!(name: 'Progressive House')
-['DAT_congaverb', 'DAT_kickprogmain', 'DAT_prog_bass', 'RD-Prog-conga-1', 'RD-Prog-conga-2', 'RD-Prog-Cowbell', 'RD-Prog-Crash', 'RD-Prog-HatSnare', 'RD-Prog-HH1', 'RD-Prog-HH1-1', 'RD-Prog-HH2', 'RD-Prog-KICK2', 'RD-Prog-Lightom', 'RD-Prog-Lowtom', 'RD-Prog-Maraca', 'RD-Prog-PedalHH1', 'RD-Prog-Rimshot', 'RD-Prog-Snare2', 'RD-Prog-snaregate', 'RD-Prog-SnipHat1', 'RD-Prog-Tamborine', 'RD-Prog-tuna', 'RD-Prog-WaterRim-1', 'RD-Prog-Zap', 'RD-ProgClap1']
+samples = ['DAT_congaverb', 'DAT_kickprogmain', 'DAT_prog_bass', 'RD-Prog-conga-1', 'RD-Prog-conga-2', 'RD-Prog-Cowbell', 'RD-Prog-Crash', 'RD-Prog-HatSnare', 'RD-Prog-HH1', 'RD-Prog-HH1-1', 'RD-Prog-HH2', 'RD-Prog-KICK2', 'RD-Prog-Lightom', 'RD-Prog-Lowtom', 'RD-Prog-Maraca', 'RD-Prog-PedalHH1', 'RD-Prog-Rimshot', 'RD-Prog-Snare2', 'RD-Prog-snaregate', 'RD-Prog-SnipHat1', 'RD-Prog-Tamborine', 'RD-Prog-tuna', 'RD-Prog-WaterRim-1', 'RD-Prog-Zap', 'RD-ProgClap1']
+letters = ['Q', 'W', 'E', 'R', 'T', 'Y', 'U', 'I', 'O', 'P', 'A', 'S', 'D', 'F', 'G', 'H', 'J', 'K', 'L', 'Z', 'X', 'C', 'V', 'B', 'N', 'M']
+samples.each_with_index do |item, index|
+  Sample.create! name: item, key_mapped_to: letters[index], sample_pack: kit
+end
+
+
+kit = SamplePack.create!(name: 'Trance')
+samples = ['RD-Trans-Basslong', 'RD-Trans-Clap1', 'RD-Trans-Clap2', 'RD-Trans-Closed HH3', 'RD-Trans-cong2', 'RD-Trans-cong3', 'RD-Trans-cong4', 'RD-Trans-Crash', 'RD-Trans-HH1', 'RD-Trans-HH2', 'RD-Trans-HH3', 'RD-Trans-HH4', 'RD-Trans-Kick2', 'RD-Trans-Kick6', 'RD-Trans-Maraca', 'RD-Trans-Open2', 'RD-Trans-PedalHH2', 'RD-Trans-Rimshot2', 'RD-Trans-Snr1', 'RD-Trans-Snr4', 'RD-Trans-Snr5', 'RD-Trans-Synth1', 'RD-Trans-Synth2', 'RD-Trans-Tom1', 'RD-Trans-Tom2']
+letters = ['Q', 'W', 'E', 'R', 'T', 'Y', 'U', 'I', 'O', 'P', 'A', 'S', 'D', 'F', 'G', 'H', 'J', 'K', 'L', 'Z', 'X', 'C', 'V', 'B', 'N', 'M']
+samples.each_with_index do |item, index|
+  Sample.create! name: item, key_mapped_to: letters[index], sample_pack: kit
+end
+
+
+kit = SamplePack.create!(name: 'Harsh Electro')
+samples = ['rwq', 'rww', 'rwe', 'rwr', 'rwt', 'rwy', 'rwu', 'rwi', 'rwo', 'rwp', 'rwa', 'rws', 'rwd', 'rwf', 'rwg', 'rwh', 'rwj', 'rwk', 'rwl', 'rwz', 'rwx', 'rwc', 'rwv', 'rwb', 'rwn', 'rwm']
+letters = ['Q', 'W', 'E', 'R', 'T', 'Y', 'U', 'I', 'O', 'P', 'A', 'S', 'D', 'F', 'G', 'H', 'J', 'K', 'L', 'Z', 'X', 'C', 'V', 'B', 'N', 'M']
+samples.each_with_index do |item, index|
+  Sample.create! name: item, key_mapped_to: letters[index], sample_pack: kit
+end
+
+
+kit = SamplePack.create!(name: 'Daft Punk')
+samples = ['dp-Close-Hat', 'dp-FAT-Kick', 'dp-Horn', 'dp-Kick', 'dp-Open-Hat', 'dp-Percu-1', 'dp-Percu-2', 'dp-Percu-3', 'dp-Snare', 'dp-TEACHERS-KICK', 'dp-TEACHERS-SNARE', 'dp-TEACHERS-VOICE 1', 'dp-TEACHERS-VOICE 2']
 letters = ['Q', 'W', 'E', 'R', 'T', 'Y', 'U', 'I', 'O', 'P', 'A', 'S', 'D', 'F', 'G', 'H', 'J', 'K', 'L', 'Z', 'X', 'C', 'V', 'B', 'N', 'M']
 samples.each_with_index do |item, index|
   Sample.create! name: item, key_mapped_to: letters[index], sample_pack: kit
