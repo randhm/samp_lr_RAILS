@@ -1,18 +1,18 @@
 <div id="sign-in">
 <%= image_tag("samplr_logo.png", size: "400x275", :id => "floating-box-logo") %>
-<div id="strapline">create.record.share</div>
+<div id="strapline">play.record.share</div>
 
 <%= form_for(resource, :as => resource_name, :url => registration_path(resource_name)) do |f| %>
   <%= devise_error_messages! %>
 
   <%= f.label :email, :class => 'label' %><br />
-  <div class="text-box"><%= f.email_field :email, :autofocus => true %></div>
+  <div class="text-box-sign-up"><%= f.email_field :email, :autofocus => true %></div>
 
   <%= f.label :password, :class => 'label' %><br />
-  <div class="text-box"><%= f.password_field :password %></div>
+  <div class="text-box-sign-up"><%= f.password_field :password %></div>
 
   <%= f.label :password_confirmation, :class => 'label' %><br />
-  <div class="text-box"><%= f.password_field :password_confirmation %></div>
+  <div class="text-box-sign-up"><%= f.password_field :password_confirmation %></div>
 
   <div><%= f.submit "Sign up" %></div>
 <% end %>

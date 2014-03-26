@@ -57,19 +57,19 @@ body {
 }
 
 #photo {
-  margin-left: 8px;
+  margin-left: 407px;
 }
 
 #email {
   position: absolute;
   margin-top: -33px;
-  margin-left: 75px;
+  margin-left: 475px;
 }
 
 #standby {
   position: absolute;
   margin-top: -45px;
-  margin-left: 286px;
+  margin-left: 687px;
 }
 
 
@@ -77,7 +77,7 @@ body {
 #kits-link {
   position: absolute;
   color: white;
-  font-size: 14px;
+  font-size: 13px;
   width: 69px;
   height: 35px;
   padding-left: 5px;
@@ -86,12 +86,13 @@ body {
   border: 1px white solid;
   opacity: 0.9;
   text-decoration: none;
+  margin-left: 127px;
 }
 
 #my-songs {
   position: absolute;
   color: white;
-  font-size: 14px;
+  font-size: 13px;
   margin-left: 95px;
   width: 69px;
   height: 35px;
@@ -101,7 +102,7 @@ body {
   border:1px white solid;
   opacity: 0.9;
   text-decoration: none;
-
+  margin-left: 219px;
 }
 
 /*li {
@@ -156,14 +157,14 @@ ul {
 
 #sign-in-content {
   position: absolute;
-  margin-top: -50px;
+  margin-top: -66px;
   margin-left: 62px;
 /*  margin-bottom: -30px;
 */}
 
 #floating-box-logo {
   margin-left: 40px;
-  margin-top: -70px;
+  margin-top: -62px;
 }
 
 #strapline {
@@ -475,6 +476,20 @@ p.keyboard-text {
   margin-top: 58px;
 }
 
+.pagination {
+  position: absolute;
+  color: white;
+  background-color: #8B959E;
+  margin-left: 44px;
+}
 
+/*span .page .current {
+  color: white;
+}*/
 
+/*---------------Sign up----------------*/
+
+/*.text-box-sign-up {
+  background-color: white;
+}*/
 
