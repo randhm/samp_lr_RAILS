@@ -225,8 +225,8 @@ div p {
 
 #record_song, #recording {
   position: absolute;
-  margin-top: 380px;
-  margin-left: 770px;
+  margin-top: 336px;
+  margin-left: 795px;
 }
 
 #playback-button {
@@ -304,8 +304,8 @@ div p {
 
 #song_name {
   position: absolute;
-  margin-top: 405px;
-  margin-left: 400px;
+  margin-top: 360px;
+  margin-left: 463px;
   height: 50px;
   width: 300px;
   font-size: 30px;
@@ -330,7 +330,7 @@ input {
   position: absolute;
   max-width: 913px;
   margin-left: 200px;
-  margin-top: 100px;
+  margin-top: 55px;
 /*  margin: 0 auto;*/
 }
 
@@ -354,6 +354,29 @@ p {
   margin-top: 5px;
 }
 
+#keyboard-instruction {
+  position: absolute;
+  width: 480px;
+  margin-top: 451px;
+  margin-left: 375px;
+  background-color:#8B959E;
+}
+
+
+p.keyboard-text {
+  line-height: 30px;
+  color: black;
+  font-size: 15px;
+}
+
+#line-1 {
+  margin-left: 33px;
+}
+
+#line-2 {
+  margin-left: 8px;
+}
+
 /*---------------KIT SELECTOR------------------*/
 
 #sample-pack-container {
@@ -374,6 +397,8 @@ p {
   background-color: #8B959E;
   margin: 10px;
   border:1px white solid;
+  opacity: 0.9;
+  box-shadow: 5px 5px 1px #8B959E;
 }
 
 .sample-pack-button a {
@@ -416,5 +441,7 @@ p {
   margin-left: 15px;
   margin-top: 58px;
 }
+
+
 
 
