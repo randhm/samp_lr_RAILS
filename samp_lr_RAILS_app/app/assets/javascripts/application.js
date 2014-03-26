@@ -83,6 +83,16 @@ $(document).ready(function() {
   });
 
 
+$("#song_name").on('focus', function(ev){
+  $(document).unbind("keydown", myPlayer.newNotePressed);
+});
+
+$("#song_name").on('blur', function(ev){
+  $(document).keydown(myPlayer.newNotePressed);
+});
+
+
+
 $("#song_name").keyup(function(ev) {
   $songName = $(ev.currentTarget);
   if ($songName.val() > "") {
