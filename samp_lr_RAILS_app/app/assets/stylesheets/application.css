@@ -63,7 +63,8 @@ body {
 #email {
   position: absolute;
   margin-top: -33px;
-  margin-left: 475px;
+  margin-left: 494px;
+  font-size: 13px;
 }
 
 #standby {
@@ -258,7 +259,7 @@ div p {
 
 #record_song, #recording {
   position: absolute;
-  margin-top: 336px;
+  margin-top: 366px;
   margin-left: 795px;
 }
 
@@ -337,7 +338,7 @@ div p {
 
 #song_name {
   position: absolute;
-  margin-top: 360px;
+  margin-top: 388px;
   margin-left: 463px;
   height: 50px;
   width: 300px;
@@ -363,7 +364,7 @@ input {
   position: absolute;
   max-width: 913px;
   margin-left: 200px;
-  margin-top: 55px;
+  margin-top: 94px;
 /*  margin: 0 auto;*/
 }
 
@@ -390,7 +391,7 @@ p {
 #keyboard-instruction {
   position: absolute;
   width: 480px;
-  margin-top: 451px;
+  margin-top: 476px;
   margin-left: 375px;
   background-color:#8B959E;
   border-radius: 15px;
@@ -409,6 +410,15 @@ p.keyboard-text {
 
 #line-2 {
   margin-left: 8px;
+}
+
+#sample-pack-name {
+  position: absolute;
+  background-color: #8B959E;
+  margin-left: 530px;
+  margin-top: 22px;
+  border-radius: 15px;
+  font-size: 30px;
 }
 
 /*---------------KIT SELECTOR------------------*/

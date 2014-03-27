@@ -20,11 +20,12 @@
           <% if current_user && current_user.image %>
             <div id="photo"><%= link_to(image_tag(current_user.image + '?type=small', :class => 'profile-img'), songs_path) %></div>
             <% end %>
+
             <%#= current_user.name if current_user.name %>
           <div id="email"><%= current_user.email %></div>
           <div id="standby"><%= link_to(image_tag("samplr_standby.png", size: "40x40"), destroy_user_session_path, method: :delete) %></div>
 
-          <% end %>
+    <% end %>
         </div>
     </div>
       <div id="main">
